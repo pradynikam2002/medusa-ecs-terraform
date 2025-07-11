@@ -1,0 +1,27 @@
+[
+  {
+    "name": "medusa",
+    "image": "medusajs/medusa:v1.12.2",
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 9000,
+        "hostPort": 9000
+      }
+    ],
+    "environment": [
+      {
+        "name": "NODE_ENV",
+        "value": "production"
+      },
+      {
+        "name": "MEDUSA_ADMIN_CORS",
+        "value": "*"
+      },
+      {
+        "name": "MEDUSA_STORE_CORS",
+        "value": "*"
+      }
+    ]
+  }
+]
